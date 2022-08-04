@@ -41,5 +41,6 @@ service cron status
 # 错误ERROR
 
 Cron: pam_unix (cron:session): session opened/closed for user root by (uid=0)
+
 编辑 /etc/pam.d/common-session-noninteractive 在 session required pam_unix.so 上方添加```session [success=1 default=ignore] pam_succeed_if.so service in cron quiet use_uid``` 保存并重启服务 ```service cron restart```
 
