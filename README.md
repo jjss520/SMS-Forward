@@ -29,6 +29,17 @@ vi /etc/crontab
 #每5分钟进行一次同步并在结束后清空短信  python3后面为msg.py目录 forward 转发功能
 */5 * * * *   root    python3 /root/msg.py forward && python3 /root/msg.py clean
 ```
+检查状态
+```
+service cron status
+#查看执行状态和运行状态
+```
 
 ## 记录LOG
 在notify的目录下 'log' 文件
+
+# 错误ERROR
+
+Cron: pam_unix (cron:session): session opened/closed for user root by (uid=0)
+编辑 /etc/pam.d/common-session-noninteractive 在 session required pam_unix.so 上方添加```session [success=1 default=ignore] pam_succeed_if.so service in cron quiet use_uid``` 保存并重启服务 ```service cron restart```
+
