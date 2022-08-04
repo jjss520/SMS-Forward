@@ -33,8 +33,8 @@ push_config = {
     
     'MIPUSH_TOPIC':'',                  # MIPUSH 安卓应用 “消息接收”
     
-    'FCM_KEY':'eSbuJ-nHRZydzijrqhwXd7:APA91bGC3dekz3y6Jrd3fwrxA88_7THgSNBUAx9OWQJPVRrscnvPUPW2zjwzmYl5MV4Ozez24T-GFLlSOiX7c8TPTBVLZIaVoxNu0EXLOIp0ZGa5UlmsKvb_numfDU7MhlqKj3gOcwKJ',
-    # https://github.com/SimonMarquis/FCM-toolbox 下载apk 右上三点 Topics 设置标签， share token 复制创建新变量 FCM_KEY即可，第一次需要梯子用来注册，后续不用挂这，后台建议关闭电池优化
+    'FCM_KEY':'',
+    #https://github.com/SimonMarquis/FCM-toolbox 下载apk 右上三点 Topics 设置标签， share token 复制创建新变量 FCM_KEY即可，第一次需要梯子用来注册，后续不用挂这，后台建议关闭电池优化
     
     'BARK_PUSH': '',                    # 必填 bark IP 或设备码，例：https://api.day.app/DxHcxxxxxRxxxxxxcm/
     'BARK_ARCHIVE': '',                 # bark 推送是否存档
@@ -70,7 +70,7 @@ push_config = {
     'QMSG_TYPE': '',                    # qmsg 酱的 QMSG_TYPE
     
     #corpid,corpsecret,touser(注:多个成员ID使用|隔开),agentid,消息类型(选填,不填默认文本消息类型)，例如：企业id,secret,@all,AgentId,media_id
-    'QYWX_AM': 'ww06ae8a2026ba114e,JP6FJLXXM8QcepYetvHsEignCMzIQtRWrFVHlY9ZnhU,@all,1000004',
+    'QYWX_AM': '',
     'QYWX_KEY': '',                     # 企业微信机器人
 
     'TG_BOT_TOKEN': '',                 # 必填 tg 机器人的 TG_BOT_TOKEN，例：1407203283:AAG9rt-6RDaaX0HBLZQq0laNOh898iFYaRQ
