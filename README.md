@@ -36,7 +36,7 @@ service cron status
 ```
 
 ## 记录LOG
-在notify的目录下 'log' 文件
+在notify的目录下 'sms_log' 文件
 
 # 错误ERROR
 
