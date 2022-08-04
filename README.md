@@ -1,5 +1,6 @@
 # 短信转发 随身wifi
-基于https://gitee.com/jiu-xiao/ufi-message魔改而来
+msg.py 基于 https://gitee.com/jiu-xiao/ufi-message 魔改而来
+notify 基于 https://github.com/whyour/qinglong 魔改而来
 
 # 功能
 - 定时转发
@@ -14,22 +15,19 @@
 
 # 开始设置
 
-
 ## 设置notify文件
-在通知服务下输入相关的token来支持推送。更多请百度搜索 实例‘青龙 微信通知’  #本文件基于青龙面板notify魔改
-
-
+在通知服务下输入相关的token来支持推送。更多请百度搜索 实例‘青龙 微信通知’
 
 ## 设置cron定时
 
 ```
-#编辑root用户的cron任务
-crontab -u root -e
+#编辑cron任务
+vi /etc/crontab
 ```
-填入一下内容
+填入以下内容
 ```
-#每5分钟进行一次同步并在结束后清空短信
-*/5  * * * * sh /root/msg.py forward && sh /root/msg.py clean
+#每5分钟进行一次同步并在结束后清空短信  python3后面为msg.py目录 forward 转发功能
+*/5 * * * *   root    python3 /root/msg.py forward && python3 /root/msg.py clean
 ```
 
 ## 记录LOG
