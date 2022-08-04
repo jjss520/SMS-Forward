@@ -7,6 +7,16 @@ notify 基于 https://github.com/whyour/qinglong 魔改而来
 - 多渠道通知
 - 超小占用
 - 稳定运行
+- 发送短信
+```python3 msg.py add 861234567890 text
+添加发送到1234567890的内容为text的短信到暂存区
+python3 msg.py send
+```
+- 清除所有短信
+```python3 msg.py clean```
+- 列出所有短信
+```mmcli -m 0 --messaging-list-sms```
+
 
 # 依赖
 - Python3
