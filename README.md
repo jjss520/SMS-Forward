@@ -26,12 +26,10 @@ python3 msg.py send
 - requests
 - cron
 
-# 开始设置
-
-## 设置notify文件
+# 设置notify文件
 在通知服务下输入相关的token来支持推送。更多请百度搜索 实例‘青龙 微信通知’
 
-## 设置cron定时
+# 设置cron定时
 
 ```
 #编辑cron任务
@@ -48,7 +46,7 @@ service cron status
 #查看执行状态和运行状态
 ```
 
-## 记录LOG
+# 记录LOG
 在notify的目录下 'sms_log' 文件
 
 # 错误ERROR
