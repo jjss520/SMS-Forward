@@ -1,5 +1,6 @@
 # 短信转发 随身wifi
 msg.py 基于 https://gitee.com/jiu-xiao/ufi-message 魔改而来
+
 notify 基于 https://github.com/whyour/qinglong 魔改而来
 
 # 功能
@@ -9,8 +10,9 @@ notify 基于 https://github.com/whyour/qinglong 魔改而来
 - 稳定运行
 - 发送短信
 ```
+#添加发送到1234567890的内容为text的短信到暂存区
 python3 msg.py add 861234567890 text
-添加发送到1234567890的内容为text的短信到暂存区
+#将所有暂存区的短信发送
 python3 msg.py send
 ```
 - 清除所有短信
